@@ -11,6 +11,6 @@ setup(
     description="child of django-su package(django's)",
     author="Django, Updated by Lalithkumar",
     url='https://sendhub.com/',
-    packages=['sendhub'],
+    packages=['django-su'],
     package_data={'sendhub': [VERSION]}
 )
