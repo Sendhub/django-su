@@ -16,7 +16,7 @@ def su_login_callback(user):
 
     func = getattr(settings, 'SU_LOGIN_CALLBACK', None)
     if func is not None:
-        if not isinstance(func, collections.Callable):
+        if not isinstance(func, collections.abc.Callable):
             func = import_string(func)
         return func(user)
     return user.has_perm('auth.change_user')
@@ -27,7 +27,7 @@ def custom_login_action(request, user):
     if func is None:
         return False
 
-    if not isinstance(func, collections.Callable):
+    if not isinstance(func, collections.abc.Callable):
         func = import_string(func)
     func(request, user)
 
