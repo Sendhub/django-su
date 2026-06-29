@@ -1,0 +1,8 @@
+include CHANGES.txt
+include LICENSE
+include README.rst
+include README.md
+include VERSION
+include django_su/VERSION
+recursive-include django_su/locale *.po *.mo
+recursive-include django_su/templates *.html

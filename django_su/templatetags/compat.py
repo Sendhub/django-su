@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 from django import template
 
@@ -9,4 +8,4 @@ register = template.Library()
 
 @register.tag
 def url(parser, token):
-    return url_compat(parser, token)
+    return url_compat(parser, token)  # pragma: no cover

@@ -1,0 +1,205 @@
+Change-log for django-su.
+
+This file will be added to as part of each release
+----
+
+Version 1.0.0, Fri 1 May 2022
+==============================
+
+Fix compatibility with Django 4.0
+Test in Django versions 2.2 - 4.0, Python versions 3.7 - 3.10
+
+Version 0.9.0, Mon 20 Jan 2020
+===============================
+
+efaf6f65c0	Updating setup.py for django version support changes (Adam Charnock)
+3afa8335d2	Work on migrating away from django-setuptest, as it is no longer maintained (Adam Charnock)
+10da766742	Work on migrating away from django-setuptest, as it is no longer maintained (Adam Charnock)
+360d621293	Work on migrating away from django-setuptest, as it is no longer maintained (Adam Charnock)
+117b0a2c92	Updating CI config for django 3 and python 3.8 (Adam Charnock)
+b88eb7441c	remove deprecated template loader 'admin_static' in favor to 'static' (Genesis Guerrero Martinez)
+ae406537e2	Dropped support for django < 1.11 (Basil Shubin)
+662a472783	minor: call get_user_model once per method (Daniel Hahler)
+b7a4cbfbe5	Version bump to 0.8.0 and updating CHANGES.txt (Adam Charnock)
+57c42a6cf3	Update argument of django-su.backends.authenticate function (Geoffrey H. Ferrari)
+9c037ed3eb	Update UserSuForm to enhance compatibility with custom user models. (Geoffrey H. Ferrari)
+30502d08b9	Documenting use of AUTH_USER_MODEL with django-su (formatting fix) (Adam Charnock)
+861a59776a	Documenting use of AUTH_USER_MODEL with django-su (formatting fix) (Adam Charnock)
+e88ab1fd63	Documenting use of AUTH_USER_MODEL with django-su. Closes #62 (Adam Charnock)
+f4b397ccac	Version bump to 0.7.0 and updating CHANGES.txt (Adam Charnock)
+60cccda009	Adding missing version bump (Adam Charnock)
+18df6887a6	Add request to authenticate call (Ilaissa Romero)
+ee2787a368	Version bump to 0.6.0 and updating CHANGES.txt (Adam Charnock)
+
+
+Version 0.8.0, Sat 15 Sep 2018
+===============================
+
+e6b2bc9d78	Update argument of django-su.backends.authenticate function (Geoffrey H. Ferrari)
+a46c152adb	Update UserSuForm to enhance compatibility with custom user models. (Geoffrey H. Ferrari)
+2235eac863	Documenting use of AUTH_USER_MODEL with django-su (formatting fix) (Adam Charnock)
+56921c216d	Documenting use of AUTH_USER_MODEL with django-su (formatting fix) (Adam Charnock)
+74b3ccd7ba	Documenting use of AUTH_USER_MODEL with django-su. Closes #62 (Adam Charnock)
+
+
+Version 0.7.0, Mon 13 Aug 2018
+===============================
+
+2cec5cca12	Adding missing version bump (Adam Charnock)
+89d36c414f	Add request to authenticate call (Ilaissa Romero)
+
+
+Version 0.6.0, Mon 18 Dec 2017
+===============================
+
+9c2db58f78	Disabling CI for django 2.0 on python 2.7 (Adam Charnock)
+9e89c52e82	Dropping support for django 1.4 (Adam Charnock)
+4a37193a2d	Reverting testing changes to setup.py (Adam Charnock)
+17d9d06e86	Fixes for django 2.0. Had to change how the user's last_login was maintained due to changes in Signal.disconnect() (Adam Charnock)
+8d00040c5b	No need for su when adding a new user (Riccardo Magliocchetti)
+d9bad3c19f	Update .travis.yml (Basil Shubin)
+137a50ef5a	ref @446b698 (Basil Shubin)
+2bc30f43f0	added missing TEMPLATE_DIRS (Basil Shubin)
+22cb5214ba	dropped python 2.6 and 3.3 from support (Basil Shubin)
+5e399e84d5	upgraded test suite (Basil Shubin)
+446b6986e5	Fix for relocation of django.core.urlresolvers -> django.urls in Django 2 (Adam Charnock)
+d05ffa3783	No longer testing django master against python 2 (Django 2 will support Python 3 only) (Adam Charnock)
+d98ab119da	fix broken exception handler (Basil Shubin)
+4e6187b53b	Update compat.py (Basil Shubin)
+69c1442a13	Update MANIFEST.in (Basil Shubin)
+a6eaa28630	New translation (Gustavo Santana)
+5d5902f1ca	make sure compat template tag library is loaded (bashu)
+f7c7d78808	customized admin/base_site.html, fix #54 (bashu)
+8731d5a3ad	update example project (bashu)
+f75ea07657	make sure all csrf protection is enabled (bashu)
+7d637e8de4	remove whitespaces (bashu)
+d5185c0fa1	Correct grammar used in warning (Fred Palmer)
+
+
+Version 0.5.2, Wed 20 Apr 2016
+===============================
+
+3d09b7bec4	re-enabling ``formadmin`` (bashu)
+b56f68f476	small improvement (bashu)
+20f6217818	added ``UsersLookup`` as example (bashu)
+d58bc4ce45	make sure ``example`` project works with django 1.9+ (bashu)
+7126f4a1b2	replace render_to_response to render (Konstantin Seleznev)
+7a7c1c1a2c	fixed a stupid mistake in template (bashu)
+
+
+Version 0.5.1, Wed 23 Mar 2016
+===============================
+
+6f781a02fe	updated example (bashu)
+db634b5d6e	su now works with django-suit, fix #48 (bashu)
+245700d9fc	using django's module loading utils, fix #45 (bashu)
+d1ee129ac8	Update README.rst (Basil Shubin)
+a659a40e8a	fixed my own fixes (kudos to @PetrDlouhy) (bashu)
+ba5e4f8984	switched from zipball to tarball (bashu)
+4c060a84c9	fix for Django 1.10 (Petr Dlouhý)
+96d1178806	test (with allow failures) on dev (Petr Dlouhý)
+890004401d	updated example project (bashu)
+24cb98f6b7	getting rid of pypy (bashu)
+eccb6743f9	fixed .travis.yml (bashu)
+92e9c20a3e	added django 1.9 support (bashu)
+632db8ff8c	fixed "RemovedInDjango110Warning: The context_instance argument of render_to_string is deprecated..." (bashu)
+56f8acf462	fixed "RemovedInDjango110Warning: You haven't defined a TEMPLATES setting..." (bashu)
+7b2d58b751	fixed "RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated..." (bashu)
+edb9b166ef	cleanup CHANGES.txt (bashu)
+
+
+Version 0.5.0, Fri 27 Nov 2015
+===============================
+
+9d08e6587f	Preventing updating of a user's last_login field when su'ing (Adam Charnock)
+37f648c05a	Basic non-ajax user select now sorts users by username [#41] (Adam Charnock)
+13f2374a74	Added context_processor and a template element. (Aymeric Derbois)
+5c7731dbb7	added ``ru`` translation (bashu)
+
+
+Version 0.4.8, Fri 03 Jul 2015
+===============================
+
+2748e10e7c	Allow negative user id, fix #30 (Basil Shubin)
+ca73033541	improve python3 compatibility (Basil Shubin)
+e2dbf20bfd	Only import url from future when using Django < 1.5 (Basil Shubin)
+3d9860d948	Allowing only POST to login views. This avoid potential XSRF issues. (Jason Lawrence)
+
+
+Version 0.4.7, Wed 09 Jul 2014
+===============================
+
+571f2aac86	Fix for django 1.4 (Iacopo Spalletti)
+
+
+Version 0.4.6, Wed 09 Jul 2014
+===============================
+
+
+Version 0.4.5, Sat 24 May 2014
+===============================
+
+186aa20be4	missed the su_exit for the auth.login override (Clay Johns)
+f700cf1a19	added the ability to override the auth.login function (Clay Johns)
+
+
+Version 0.4.4, Sat 24 May 2014
+===============================
+
+e9564130db	Further cleanup of src directory usage (Adam Charnock)
+c0022f363b	Moving django_su into top level directory (Adam Charnock)
+
+
+Version 0.4.3, Sat 24 May 2014
+===============================
+
+30fe67b924	Fix login_link template on django 1.4 (Iacopo Spalletti)
+
+
+Version 0.4.2, Fri 03 Jan 2014
+===============================
+
+c9ffb78d8a	Fixed #23 object tools only show up for user and not group pages
+    Added class for django-grappelli support (won't harm vanilla admin) (David Burke)
+
+
+Version 0.4.1, Fri 20 Dec 2013
+===============================
+
+177d5cb7ed	Fixed import error for django 1.6 (Wes Okes)
+606009c1b9	Update README.rst (Adam Charnock)
+43d447ee58	Re-adding incorrectly removing changelog (Adam Charnock)
+1fc7cb5dda	Removing old changelog (Adam Charnock)
+
+
+Version 0.4.0, Mon 09 Sep 2013
+===============================
+
+65a365df3c	Remove deprecated adminmedia usage (Anthony Garcia)
+
+
+Version 0.3.2, Wed 21 Aug 2013
+===============================
+
+3021ad7e73	Minor readme updates (Adam Charnock)
+
+
+Version 0.3.1, Tue 20 Aug 2013
+===============================
+
+81e27c1c0f	Adding long_description to setup.py (Adam Charnock)
+3afc8fbcfb	Updating readme (Adam Charnock)
+
+
+Version 0.3.0, Tue 20 Aug 2013
+===============================
+
+c55b117d4d	Updating setup.py (Adam Charnock)
+7abefd1e0b	Adding a license. Fixes #8 (Adam Charnock)
+8b0704580e	Update calls to url for Django 1.5 (Andrew Frankel)
+a4f79614f8	better handling of auth backend. (Joe Vanderstelt)
+a6665efd14	django 1.4 get_user_model fix (Joe Vanderstelt)
+f4a6b11cc0	fix for django 1.4 get_user_model (Joe Vanderstelt)
+6ef3bdab54	Modify deprecated template tags for Django 1.5 compatibility (David Friedman)
+9e6178ffcb	SU_LOGIN can either be a string or a callable (David Wolever)
+ec15a6bd97	Add a logout view (Jeremy Katz)

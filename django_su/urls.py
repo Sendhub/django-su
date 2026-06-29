@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
 from django.urls import re_path  # use path if simpler patterns are preferred
 
-from .views import su_logout, su_login, login_as_user
+from .views import login_as_user, su_login, su_logout
 
 urlpatterns = [
     re_path(r"^$", su_logout, name="su_logout"),
